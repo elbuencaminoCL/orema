@@ -4,8 +4,11 @@
 @menu-blue: #435e73;
 @dark-blue: #0a1a27;
 @light-blue: #3697b7;
+@back-light-blue: #dbe3e5;
 @white: #fff;
 @grey: #333;
+@border-grey: #8c858d;
+@pink: #c96565;
 @family: 'Open Sans', sans-serif;
 .rounded-corners (@radius:10px) {
 	-webkit-border-radius: @radius;
@@ -19,7 +22,7 @@
 body {font-family:@family;}
 p {font-size:15px;}
 h1 {}
-h2 {margin:0 0 50px; font-size:24px; color:@base-blue; font-weight:600;}
+h2 {margin:0 0 50px; font-size:24px; color:@base-blue; font-weight:600; letter-spacing:-1px;}
 
 /*ESTRUCTURE*/
 #wrapper {padding:0;}
@@ -42,28 +45,72 @@ header {
 }
 
 /*CONTENT*/
-#section01 {background:url(../imag/back/bg-section.png) repeat left top; min-height:800px; text-align:center;}
+#section01 {margin:0 auto; padding:0; background:url(../imag/back/bg-section.png) 50% 0 repeat fixed; min-height:850px; text-align:center;}
 #section01 {
-	.cont-clinica {margin:0 auto; padding:200px 0 0; min-height:850px; float:none;}
+	.cont-clinica {margin:0 auto; padding:200px 0 0; min-height:739px; float:none;}
 	.cont-clinica {
 		h2 {margin:0 auto 50px; padding:0; float:none;}
 		p {margin:0 30px 20px; color:@base-blue;}
 	}
 }
-#section02 {min-height:800px; text-align:center;}
+#section02 {min-height:800px; text-align:center; -webkit-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.7); -moz-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.7); box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.7);}
 #section02 {
-	.cont-profesionales {text-align:left;}
+	.cont-profesionales {padding:200px 0 0; text-align:left;}
+	h2 {color:@base-blue;}
 	p {color:@grey;}
 }
-#section03 {min-height:800px;}
-#section04 {min-height:800px; text-align:center;}
+#section03 {min-height:800px; background:@back-light-blue;}
+#section03 {
+	.cont-especialidades {padding:200px 0 0;}
+	p {color:@base-blue;}
+}
+#section04 {min-height:900px; text-align:center; background: url(../imag/back/bg-reserva.png) 50% 0 no-repeat fixed; -webkit-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.5); -moz-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.7); box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.7);}
 #section04 {
 	h2 {color:@white;}
+	p, a {color:@white;}
+	.cont-horas {padding:220px 0 0;}
+	.rec-reserva {margin:35px auto 55px; padding:45px 35px; .rounded-corners (@radius:10px); background: url(../imag/back/bg-rec.png) repeat left top; border:@border-grey; float:none; color:@base-blue; -webkit-box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.7); -moz-box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.7); box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.7);}
+	.rec-reserva {
+		.separa-form {margin:0 0 25px; text-align:left;}
+		label {display:block; text-align:left; line-height:200%;}
+		select {width:100%; padding:10px 30px; border:2px solid @base-blue; .rounded-corners (@radius:5px);}
+		button {padding:10px 30px; background:@base-blue; color:@white; font-weight:600; text-transform:uppercase; border:none; .rounded-corners (@radius:5px); float:right;}
+		button:hover {background:@light-blue; text-decoration:underline;}
+	}
 }
-#section05 {min-height:800px;}
+#section05 {min-height:800px; background:@back-light-blue; -webkit-box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.7); -moz-box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.7); box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.7);}
+#section05 {
+	.cont-noticias {padding:200px 0 70px;}
+	.item-noticias {margin:0 0 25px; background:@white; height:140px; .rounded-corners (@radius:5px);}
+}
 #section06 {min-height:800px;}
+#section06 {
+	.cont-fundacion {padding:200px 0 70px;}
+	h2 {color:@pink;}
+	.cont-button {margin:30px 0 0;}
+	a.conoce {padding:10px 30px; background:@pink; color:@white; font-weight:600; .rounded-corners (@radius:5px); text-transform:uppercase;}
+	a.conoce:hover {background:@light-blue; text-decoration:none;}
+}
 
 /*HOME*/
+#second{
+	background: url(images/secondBG.jpg) 50% 0 no-repeat fixed;
+	color: white;
+	height: 1300px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0;
+}
+
+#second .bg{
+	background: url(images/trainers.png) 50% 0 no-repeat fixed;
+	height: 1300px;
+	margin: 0 auto;
+	padding: 0;
+	position: absolute;
+	width: 900px;
+	z-index: 200;
+}
 
 /*FOOTER*/
 footer {color:@white; background:@base-blue;}

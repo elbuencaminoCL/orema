@@ -11,6 +11,7 @@ h2 {
   font-size: 24px;
   color: #1c3c55;
   font-weight: 600;
+  letter-spacing: -1px;
 }
 /*ESTRUCTURE*/
 #wrapper {
@@ -67,14 +68,16 @@ header #main-nav ul li a {
 }
 /*CONTENT*/
 #section01 {
-  background: url(../imag/back/bg-section.png) repeat left top;
-  min-height: 800px;
+  margin: 0 auto;
+  padding: 0;
+  background: url(../imag/back/bg-section.png) 50% 0 repeat fixed;
+  min-height: 850px;
   text-align: center;
 }
 #section01 .cont-clinica {
   margin: 0 auto;
   padding: 200px 0 0;
-  min-height: 850px;
+  min-height: 739px;
   float: none;
 }
 #section01 .cont-clinica h2 {
@@ -89,30 +92,167 @@ header #main-nav ul li a {
 #section02 {
   min-height: 800px;
   text-align: center;
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.7);
+  -moz-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.7);
+  box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.7);
 }
 #section02 .cont-profesionales {
+  padding: 200px 0 0;
   text-align: left;
+}
+#section02 h2 {
+  color: #1c3c55;
 }
 #section02 p {
   color: #333333;
 }
 #section03 {
   min-height: 800px;
+  background: #dbe3e5;
+}
+#section03 .cont-especialidades {
+  padding: 200px 0 0;
+}
+#section03 p {
+  color: #1c3c55;
 }
 #section04 {
-  min-height: 800px;
+  min-height: 900px;
   text-align: center;
+  background: url(../imag/back/bg-reserva.png) 50% 0 no-repeat fixed;
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.5);
+  -moz-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.7);
+  box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.7);
 }
 #section04 h2 {
   color: #ffffff;
 }
+#section04 p,
+#section04 a {
+  color: #ffffff;
+}
+#section04 .cont-horas {
+  padding: 250px 0 0;
+}
+#section04 .rec-reserva {
+  margin: 35px auto 55px;
+  padding: 45px 35px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  background: url(../imag/back/bg-rec.png) repeat left top;
+  border: #8c858d;
+  float: none;
+  color: #1c3c55;
+  -webkit-box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.7);
+  -moz-box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.7);
+  box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.7);
+}
+#section04 .rec-reserva .separa-form {
+  margin: 0 0 25px;
+  text-align: left;
+}
+#section04 .rec-reserva label {
+  display: block;
+  text-align: left;
+  line-height: 200%;
+}
+#section04 .rec-reserva select {
+  width: 100%;
+  padding: 10px 30px;
+  border: 2px solid #1c3c55;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+#section04 .rec-reserva button {
+  padding: 10px 30px;
+  background: #1c3c55;
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  float: right;
+}
+#section04 .rec-reserva button:hover {
+  background: #3697b7;
+  text-decoration: underline;
+}
 #section05 {
   min-height: 800px;
+  background: #dbe3e5;
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.7);
+  -moz-box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.7);
+  box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.7);
+}
+#section05 .cont-noticias {
+  padding: 200px 0 70px;
+}
+#section05 .item-noticias {
+  margin: 0 0 25px;
+  background: #ffffff;
+  height: 140px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
 }
 #section06 {
   min-height: 800px;
 }
+#section06 .cont-fundacion {
+  padding: 200px 0 70px;
+}
+#section06 h2 {
+  color: #c96565;
+}
+#section06 .cont-button {
+  margin: 30px 0 0;
+}
+#section06 a.conoce {
+  padding: 10px 30px;
+  background: #c96565;
+  color: #ffffff;
+  font-weight: 600;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+#section06 a.conoce:hover {
+  background: #3697b7;
+  text-decoration: none;
+}
 /*HOME*/
+#second {
+  background: url(images/secondBG.jpg) 50% 0 no-repeat fixed;
+  color: white;
+  height: 1300px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0;
+}
+#second .bg {
+  background: url(images/trainers.png) 50% 0 no-repeat fixed;
+  height: 1300px;
+  margin: 0 auto;
+  padding: 0;
+  position: absolute;
+  width: 900px;
+  z-index: 200;
+}
 /*FOOTER*/
 footer {
   color: #ffffff;
