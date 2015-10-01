@@ -47,7 +47,7 @@ header {
 /*CONTENT*/
 #section01 {margin:0 auto; padding:0; background:url(../imag/back/bg-section.png) 50% 0 repeat fixed; min-height:850px; text-align:center;}
 #section01 {
-	.cont-clinica {margin:0 auto; padding:200px 0 0; min-height:739px; float:none;}
+	.cont-clinica {margin:0 auto; padding:200px 0 0; min-height:850px; float:none;}
 	.cont-clinica {
 		h2 {margin:0 auto 50px; padding:0; float:none;}
 		p {margin:0 30px 20px; color:@base-blue;}
@@ -62,6 +62,11 @@ header {
 #section03 {min-height:800px; background:@back-light-blue;}
 #section03 {
 	.cont-especialidades {padding:200px 0 0;}
+	.cont-especialidades {
+		.row {padding:35px 0 0;}
+		.item {background:@white; .rounded-corners (@radius:5px);} 
+		h4 {font-size:15px; text-transform:uppercase; font-weight:700;}
+	}
 	p {color:@base-blue;}
 }
 #section04 {min-height:900px; text-align:center; background: url(../imag/back/bg-reserva.png) 50% 0 no-repeat fixed; -webkit-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.5); -moz-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.7); box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.7);}
@@ -69,13 +74,13 @@ header {
 	h2 {color:@white;}
 	p, a {color:@white;}
 	.cont-horas {padding:220px 0 0;}
-	.rec-reserva {margin:35px auto 55px; padding:45px 35px; .rounded-corners (@radius:10px); background: url(../imag/back/bg-rec.png) repeat left top; border:@border-grey; float:none; color:@base-blue; -webkit-box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.7); -moz-box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.7); box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.7);}
+	.rec-reserva {margin:35px auto 55px; padding:45px 35px 20px; .rounded-corners (@radius:10px); background: url(../imag/back/bg-rec.png) repeat left top; border:@border-grey; float:none; color:@base-blue; -webkit-box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.7); -moz-box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.7); box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.7);}
 	.rec-reserva {
 		.separa-form {margin:0 0 25px; text-align:left;}
-		label {display:block; text-align:left; line-height:200%;}
-		select {width:100%; padding:10px 30px; border:2px solid @base-blue; .rounded-corners (@radius:5px);}
+		label {display:block; text-align:left; line-height:40px;}
+		select {width:100%; padding:10px 30px; border:2px solid @base-blue; .rounded-corners (@radius:5px); background: url(../imag/back/bg-select.jpg) repeat left bottom @white;}
 		button {padding:10px 30px; background:@base-blue; color:@white; font-weight:600; text-transform:uppercase; border:none; .rounded-corners (@radius:5px); float:right;}
-		button:hover {background:@light-blue; text-decoration:underline;}
+		button:hover {background:@light-blue; text-decoration:none;}
 	}
 }
 #section05 {min-height:800px; background:@back-light-blue; -webkit-box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.7); -moz-box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.7); box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.7);}
