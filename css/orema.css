@@ -26,27 +26,31 @@ header .cont-header h1 {
   margin: 12px 0 10px;
   padding: 0;
 }
+header .cont-header .cont-reservar {
+  float: right;
+}
 header .cont-header a.reservar {
   display: block;
   text-align: center;
-  margin: 12px 0 0;
-  padding: 12px 20px;
+  margin: 10px 0 8px;
+  padding: 10px 20px;
   font-size: 13px;
   font-weight: 600;
-  border: 2px solid #1c3c55;
+  border: none;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
   border-radius: 4px;
   text-transform: uppercase;
-  color: #1c3c55;
+  color: #ffffff;
+  background: #3697b7;
 }
 header .cont-header a.reservar:hover {
   text-decoration: none;
-  background: #3697b7;
+  background: #c96565;
   color: #ffffff;
-  border: 2px solid #3697b7;
+  border: none;
 }
 header #main-nav {
   background: #435e73;
@@ -63,7 +67,7 @@ header #main-nav ul li {
 }
 header #main-nav ul li a {
   display: block;
-  padding: 20px 50px;
+  padding: 22px 30px;
   color: #ffffff;
 }
 /*CONTENT*/
@@ -107,11 +111,14 @@ header #main-nav ul li a {
   color: #333333;
 }
 #section03 {
-  min-height: 800px;
+  min-height: 900px;
   background: #dbe3e5;
 }
 #section03 .cont-especialidades {
-  padding: 200px 0 0;
+  padding: 0;
+}
+#section03 .cont-especialidades h2 {
+  margin: 200px 0 20px;
 }
 #section03 .cont-especialidades .row {
   padding: 35px 0 0;
@@ -126,15 +133,30 @@ header #main-nav ul li a {
   -o-border-radius: 5px;
   border-radius: 5px;
 }
-#section03 .cont-especialidades .cont-text {
-  display: block;
-  height: 120px;
-}
-#section03 .cont-especialidades h4 {
+#section03 .cont-especialidades .item h4 {
   margin: 0 0 20px;
   font-size: 15px;
   text-transform: uppercase;
   font-weight: 700;
+}
+#section03 .cont-especialidades .item img {
+  margin: 0 0 20px;
+  border-bottom: 1px solid #8c858d;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  -ms-border-radius: 5px 5px 0 0;
+  -o-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+}
+#section03 .cont-especialidades .item .cont-text {
+  display: block;
+  height: 120px;
+  padding: 0 20px;
+  text-align: left;
+}
+#section03 .cont-especialidades .item .cont-text p {
+  font-size: 13px;
+  color: #333333;
 }
 #section03 .cont-especialidades .cont-button {
   width: 100%;
@@ -298,20 +320,26 @@ header #main-nav ul li a {
 }
 /*FOOTER*/
 footer {
+  padding: 40px 0 0;
   color: #ffffff;
   background: #1c3c55;
 }
 footer h3 {
+  margin: 0 0 15px;
   font-size: 18px;
   font-weight: 600;
 }
+footer .cont-footer p {
+  font-size: 14px;
+}
 footer .last-foot {
+  margin: 50px 0 0;
   padding: 20px 0;
   background: #0a1a27;
 }
 footer .last-foot p {
   margin: 0;
-  font-size: 15px;
+  font-size: 14px;
   color: #ffffff;
   font-weight: 600;
 }
