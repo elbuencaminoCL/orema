@@ -1,14 +1,18 @@
 // LESS
 /*MAIN STYLES*/
-@base-blue: #1c3c55;
+@base-blue: #1c3b55;
+@alt-blue: #227899;
 @menu-blue: #435e73;
 @dark-blue: #0a1a27;
 @light-blue: #3697b7;
 @back-light-blue: #dbe3e5;
 @white: #fff;
 @grey: #333;
-@border-grey: #8c858d;
-@pink: #c96565;
+@border-grey: #979797;
+@light-grey: #b3b3b3;
+@purple: #a46bcd;
+@pink: #e17664;
+@yellow: #f69617;
 @family: 'Open Sans', sans-serif;
 .rounded-corners (@radius:10px) {
 	-webkit-border-radius: @radius;
@@ -23,64 +27,85 @@ body {font-family:@family;}
 p {font-size:15px;}
 h1 {}
 h2 {margin:0 0 50px; font-size:24px; color:@base-blue; font-weight:600; letter-spacing:-1px;}
+a:hover {text-decoration:none;}
 
 /*ESTRUCTURE*/
 #wrapper {padding:0;}
 #content {}
 
 /*HEADER*/
-header {background:transparent !important; border:none !important;}
+header {background:url(../imag/back/bg-header.png) repeat-x left top transparent !important; border:none !important;}
 header {
-	.cont-header {
-		h1 {margin:12px 0 10px; padding:0;}
-		.cont-reservar {float:right;}
-		a.reservar {display:block; text-align:center; margin:10px 0 8px; padding:10px 20px; font-size:13px; font-weight:600; border:none; .rounded-corners (@radius:4px); text-transform:uppercase; color:@white; background:@light-blue;}
-		a.reservar:hover {text-decoration:none; background:@pink; color:@white; border:none;}
-	}
-	#main-nav {background:@menu-blue; color:@white; font-size:12px;}
-	#main-nav {
+	.container {position:relative;}
+	.cont-reservar {position:absolute; top:15px; right:0; padding:0; font-size:14px; font-weight:600; text-align:center;}
+	.cont-reservar a {display:block; padding:10px 25px; color:@alt-blue; letter-spacing:1px; .rounded-corners (@radius:4px); color:@alt-blue; border:2px solid @alt-blue; text-transform:uppercase;}
+	.cont-reservar a:hover {background:@alt-blue; color:@white; text-decoration:none;}
+	#nav-main {margin:80px 0 0;}
+	#nav-main {
 		ul {margin:0; padding:0;}
-		ul li {display:block; float:left;}
-		ul li a {display:block; padding:22px 30px; color:@white;}
+		ul li {display:inline-block; list-style-type:none;}
+		ul li a {display:block; padding:0 10px; color:@base-blue; font-size:16px; font-weight:600; text-transform:uppercase;}
+		ul li a:hover {color:@alt-blue;}
 	}
 }
 
 /*CONTENT*/
-#section01 {margin:0 auto; padding:0; background:url(../imag/back/bg-section.png) 50% 0 repeat fixed; min-height:850px; text-align:center;}
-#section01 {
-	.cont-clinica {margin:0 auto; padding:0; min-height:558px; float:none;}
-	.cont-clinica {
-		h2 {margin:200px auto 50px; padding:0; float:none;}
-		p {margin:0 30px 20px; color:@base-blue;}
+/*Home Inicio*/
+#section-clinica {margin:0 auto; padding:0; background:url(../imag/back/bg-inicio.jpg) 50% 0 no-repeat fixed; min-height:780px; text-align:center;}
+#section-clinica {
+	h2 {margin:200px auto 50px; padding:0; float:none;}
+	p {margin:0 30px 20px; color:@base-blue; font-weight:600;}
+	.show-video {margin:300px auto 0; text-align:center;}
+	.show-video {
+		a {color:@alt-blue; font-weight:600; text-transform:uppercase; letter-spacing:1px;}
+		a.icon {display:block; margin:0 auto 25px; width:114px; height:144px;}
+		a:hover {color:@base-blue;}
+		img {margin:0 auto;}
 	}
 }
-#section02 {min-height:800px; text-align:center; -webkit-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.7); -moz-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.7); box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.7);}
-#section02 {
-	.cont-profesionales {padding:200px 0 0; text-align:left;}
-	h2 {color:@base-blue;}
-	p {color:@grey;}
+
+/*Home - Profesionales*/
+#section-profesionales {min-height:800px; text-align:center; background:url(../imag/back/bg-prof.jpg) 50% 0 no-repeat fixed; border-bottom:1px solid @border-grey;}
+#section-profesionales {
+	.cont-profesionales {padding:100px 0 0; text-align:left;}
+	h2 {font-size:33px; line-height:130%; color:@base-blue;}
+	p {font-size:18px; color:@grey;}
+	.cont-button {display:inline-block;}
+	.cont-button a {display:block; margin:40px 0 0; padding:10px 30px; background:@base-blue; color:@white; text-transform:uppercase; letter-spacing:1px; font-weight:600; .rounded-corners (@radius:4px);}
+	.cont-button a:hover {background-color:@alt-blue;}
 }
-#section03 {min-height:900px; background:@back-light-blue;}
-#section03 {
-	.cont-especialidades {padding:0;}
+
+/*Home Especialidades*/
+#section-especialidades {padding:100px 0; background:@white; border-bottom:1px solid @border-grey;}
+#section-especialidades {
+	.cont-especialidades {padding:0; text-align:center;}
 	.cont-especialidades {
-		h2 {margin:200px 0 20px;} 
-		.row {padding:35px 0 0;}
-		.item {margin:0 0 60px; padding:0 0 30px; background:@white; .rounded-corners (@radius:5px);} 
+		h2 {margin:0 0 40px; font-size:33px;} 
+		p {margin:0 100px; color:@base-blue; font-size:18px;}
+		.row {padding:50px 0 0;}
+		.item {position:relative; margin:0 0 20px; padding:0px; height:255px; .rounded-corners (@radius:2px); border:3px solid @light-grey; overflow:hidden;} 
 		.item {
-			h4 {margin:0 0 20px; font-size:15px; text-transform:uppercase; font-weight:700;}
-			img {margin:0 0 20px; border-bottom:1px solid @border-grey; .rounded-corners (@radius:5px 5px 0 0);}
+			h4 {position:absolute; width:100%; bottom:0; left:0; margin:0px; padding:25px 0; font-size:15px; text-transform:uppercase; font-weight:700; text-align:center;}
+			h4 a {color:@white;}
+			h4:hover {background:@base-blue;}
+			img {margin:0 0 20px; width:100%; height:auto; border-bottom:1px solid @border-grey; .rounded-corners (@radius:2px);}
 			.cont-text {display:block; height:120px; padding:0 20px; text-align:left;}
 			.cont-text p {font-size:13px; color:@grey;}
 		}
-		.cont-button {width:100%;}
+		.row div:first-child .item h4 {background:@alt-blue;}
+		.row div:nth-child(2) .item h4 {background:@purple;}
+		.row div:nth-child(3) .item h4 {background:@pink;}
+		.row div:nth-child(4) .item h4 {background:@yellow;}
+		.cont-button {width:100%; margin:70px 0 40px;}
 		a.ver {padding:10px 30px; background:@base-blue; color:@white; font-weight:600; .rounded-corners (@radius:5px); text-transform:uppercase;}
 		a.ver:hover {background:@light-blue; text-decoration:none;}
 	}
 	p {color:@base-blue;}
 }
-#section04 {min-height:900px; text-align:center; background: url(../imag/back/bg-reserva.png) 50% 0 no-repeat fixed; -webkit-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.5); -moz-box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.7); box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.7);}
-#section04 {
+
+/*Home Reservas*/
+#section-reserva {min-height:820px; text-align:center; background: url(../imag/back/bg-reserva.jpg) 50% 0 no-repeat fixed;}
+#section-reserva {
 	h2 {color:@white;}
 	p, a {color:@white;}
 	.cont-horas {padding:220px 0 0;}
@@ -105,26 +130,6 @@ header {
 	.cont-button {margin:30px 0 0;}
 	a.conoce {padding:10px 30px; background:@pink; color:@white; font-weight:600; .rounded-corners (@radius:5px); text-transform:uppercase;}
 	a.conoce:hover {background:@light-blue; text-decoration:none;}
-}
-
-/*HOME*/
-#second{
-	background: url(images/secondBG.jpg) 50% 0 no-repeat fixed;
-	color: white;
-	height: 1300px;
-	margin: 0 auto;
-	overflow: hidden;
-	padding: 0;
-}
-
-#second .bg{
-	background: url(images/trainers.png) 50% 0 no-repeat fixed;
-	height: 1300px;
-	margin: 0 auto;
-	padding: 0;
-	position: absolute;
-	width: 900px;
-	z-index: 200;
 }
 
 /*FOOTER*/

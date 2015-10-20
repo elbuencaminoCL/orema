@@ -23,9 +23,8 @@
 <script src="js/bootstrap.min.js" type="text/javascript"></script>
 <script type="text/javascript">
 	$(document).ready(function(){
-		$('#section01').parallax("50%", 0.1);
-		$('#section02').parallax("50%", 0.3);
-		$('.bg').parallax("50%", 0.1);
+		$('#section-clinica').parallax("50%", 0.1);
+		$('#section-profesionales').parallax("50%", 0.3);
 		$('#section03').parallax("50%", 0.2);
 		$('.rec-reserva').parallax("50%", 0.5);
 		$('#section04').parallax("50%", 0.1);
@@ -45,36 +44,36 @@
 			<div class="container">
 		        <div class="cont-header clearfix">
 		            <div class="clearfix">
-		                <h1 class="col-lg-1 col-md-1 col-sm-2 col-xs-6"><img src="imag/logo/logo.png" alt="Clínica Orema" class="img-responsive" /></a></h1>
+		                <h1 class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><img src="imag/logo/logo.png" alt="Clínica Orema" class="img-responsive" /></a></h1>
+		                <div id="main-nav" class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+						    <div class="container">
+						        <div class="cont-header clearfix">
+						            <div class="navbar-header">
+						                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-main" aria-expanded="false" aria-controls="navbar">
+						                    <span class="sr-only">Toggle navigation</span>
+						                    <span class="icon-bar"></span>
+						                    <span class="icon-bar"></span>
+						                    <span class="icon-bar"></span>
+						                </button>
+						            </div>
+						            <nav id="nav-main" class="navbar-collapse collapse col-lg-10 col-md-10 col-sm-12 col-xs-12 clearfix">
+						                <ul class="clearfix">
+						                  	<li><a href="nuestra-clinica.html">Nuestra Clínica</a></li>
+						                    <li><a href="profesionales.html">Profesionales</a></li>
+						                    <li><a href="especialidades.html">Especialidades</a></li>
+						                   	<li><a href="fundacion-orema.html">Fundación Orema</a></li>
+						                   	<li><a href="noticias.html">Noticias</a></li>
+						                   	<li><a href="#">Tus Exámenes</a></li>
+						                </ul>
+						            </nav>
+						        </div>
+						    </div>
+					    </div>
 		            </div>
 		        </div>
-		    </div>
-		    <div id="main-nav">
-			    <div class="container">
-			        <div class="cont-header clearfix">
-			            <div class="navbar-header">
-			                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-main" aria-expanded="false" aria-controls="navbar">
-			                    <span class="sr-only">Toggle navigation</span>
-			                    <span class="icon-bar"></span>
-			                    <span class="icon-bar"></span>
-			                    <span class="icon-bar"></span>
-			                </button>
-			            </div>
-			            <nav id="nav-main" class="navbar-collapse collapse col-lg-10 col-md-10 col-sm-12 col-xs-12 clearfix">
-			                <ul class="clearfix">
-			                  	<li><a href="nuestra-clinica.html">Nuestra Clínica</a></li>
-			                    <li><a href="profesionales.html">Profesionales</a></li>
-			                    <li><a href="especialidades.html">Especialidades</a></li>
-			                   	<li><a href="fundacion-orema.html">Fundación Orema</a></li>
-			                   	<li><a href="noticias.html">Noticias</a></li>
-			                   	<li><a href="#">Tus Exámenes</a></li>
-			                </ul>
-			            </nav>
-			            <div class="cont-reservar col-lg-2 col-md-2 col-sm-3 col-xs-6">
-		                	<a href="#" title="Reserva tu hora" class="reservar">Reserva tu hora</a>
-		                </div>
-			        </div>
-			    </div>
+		        <div class="cont-reservar col-lg-2 col-md-2 col-sm-3 col-xs-6">
+					<a href="#" title="Reserva tu hora" class="reservar">Reserva tu hora</a>
+				</div>
 		    </div>
 		</header>
 		<!--/HEADER-->
@@ -82,30 +81,19 @@
 		<div id="content" class="clearfix">
 			<div id="section-clinica">
 				<div class="container">
-					<!--Video Section-->
-					<div class="cont-clinica col-lg-10 col-md-10 col-sm-11 col-xs-11">
-						<div class="show-video">
-							<h4>Conoce más de nuestra clínica</h4>
-						</div>
+					<div class="show-video">
+						<a href="#" class="icon"><img src="imag/auxi/play-azul.png" alt="Conoce más de nuestra Clínica" class="img-responsive" /></a>
+						<a href="#">Conoce más de nuestra Clínica</a>
 					</div>
-					<div id="video_container">
-				        <video preload autoplay loop id="bgvid" poster="img/load.jpg">
-				          	<source src="http://www.elbuencamino.com/vid/ebc.mp4" type="video/mp4">
-				          	<source src="http://www.elbuencamino.com/vid/ebc.webm" type="video/webm">
-				          	<source src="http://www.elbuencamino.com/vid/ebc.m4v" type="video/m4v">
-				            Tu navegador no sopora el tag de video
-				        </video>
-				    </div>
-					<!--/Video Section -->
 				</div>
 			</div>
 			<div id="section-profesionales">
 				<div class="container">
 					<div class="bg"></div>
-					<div class="cont-profesionales col-lg-6 col-md-6 col-sm-6 col-xs-12">
-						<h2>Un equipo de profesionales de excelencia a tu servicio</h2>
-						<p>En Clínica Orema resolvemos todas tus necesidades para generar el cambio que necesitas. Para eso ponemos a tu disposición un equipo multidisciplinario de profesionales y asistentes de primer nivel y reconocido prestigio; laboratorios clínico y dental y un completo servicio de diagnóstico por imágenes con servicios de vanguardia.</p>
-						<div class="cont-button">
+					<div class="cont-profesionales col-lg-5 col-md-5 col-sm-5 col-xs-12">
+						<h2 class="slide-top">Un equipo de profesionales de excelencia a tu servicio</h2>
+						<p class="slide-top">En Clínica Orema resolvemos todas tus necesidades para generar el cambio que necesitas. Para eso ponemos a tu disposición un equipo multidisciplinario de profesionales y asistentes de primer nivel y reconocido prestigio; laboratorios clínico y dental y un completo servicio de diagnóstico por imágenes con servicios de vanguardia.</p>
+						<div class="cont-button slide-top">
 							<a href="#" class="ver">Conoce nuestros profesionales</a>
 						</div>
 					</div>
@@ -114,48 +102,48 @@
 			<div id="section-especialidades">
 				<div class="container">
 					<div class="cont-especialidades">
-						<h2>Nuestras Especialidades</h2>
-						<p>Clínica Orema cuenta con un reconocido y experimentado equipo de trabajo. Ofrecemos a oportunidad a nuestros pacientes de acceder a avanzados e innovadores tratamientos con un enfoque interdisciplinario, todo en un mismo lugar.</p>
+						<h2 class="slide-top">Nuestras Especialidades</h2>
+						<p class="slide-top">Clínica Orema cuenta con un reconocido y experimentado equipo de trabajo. Ofrecemos a oportunidad a nuestros pacientes de acceder a avanzados e innovadores tratamientos con un enfoque interdisciplinario, todo en un mismo lugar.</p>
 						<div class="row clearfix">
-							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 slide-bottom" data-plugin-options='{"speed":200}'>
-								<div class="item">
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+								<div class="item slide-top">
 									<img src="imag/demo/ejemplo_esp.jpg" alt="Implantología" class="img-responsive" />
-									<h4>Implantología Oral</h4>
-									<div class="cont-text">
+									<h4><a href="#">Implantología Oral</a></h4>
+									<!--<div class="cont-text">
 										<p>Esta especialidad permite rehabilitar a un paciente a través de la colocación de implantes de titanio, que reemplazan la raíz del diente natural.</p>
-									</div>
+									</div>-->
 								</div>
 							</div>
-							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 slide-bottom" data-plugin-options='{"speed":300}'>
-								<div class="item">
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+								<div class="item slide-top">
 									<img src="imag/demo/ejemplo_esp.jpg"  alt="Implantología" class="img-responsive" />
-									<h4>Ortodoncia</h4>
-									<div class="cont-text">
+									<h4><a href="#">Ortodoncia</a></h4>
+									<!--<div class="cont-text">
 										<p>La Ortodoncia y Ortopedia de los maxilares permite corregir malposiciones dentarias, mediante el uso de aparatos removibles o fijos en adultos y niños.</p>
-									</div>
+									</div>-->
 								</div>
 							</div>
-							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 slide-bottom" data-plugin-options='{"speed":400}'>
-								<div class="item">
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+								<div class="item slide-top">
 									<img src="imag/demo/ejemplo_esp.jpg"  alt="Implantología" class="img-responsive" />
-									<h4>Diseño digital de sonrisas</h4>
-									<div class="cont-text">
+									<h4><a href="#">Diseño digital de sonrisas</a></h4>
+									<!--<div class="cont-text">
 										<p>La Ortodoncia y Ortopedia de los maxilares permite corregir malposiciones dentarias, mediante el uso de aparatos removibles o fijos en adultos y niños.</p>
-									</div>
+									</div>-->
 								</div>
 							</div>
-							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 slide-bottom" data-plugin-options='{"speed":500}'>
-								<div class="item">
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+								<div class="item slide-top">
 									<img src="imag/demo/ejemplo_esp.jpg"  alt="Implantología" class="img-responsive" />
-									<h4>Cirugía Maxilofacial y Oral</h4>
-									<div class="cont-text">
+									<h4><a href="#">Cirugía Maxilofacial y Oral</a></h4>
+									<!--<div class="cont-text">
 										<p>Tratamiento del trauma facial, correcciones de deformidades de la cara y aspectos de la cirugía reconstructiva facial.</p>
-									</div>
+									</div>-->
 								</div>
 							</div>
-							<div class="cont-button slide-bottom">
-								<a href="#" class="ver">Ver todas las especialidades</a>
-							</div>
+						</div>
+						<div class="cont-button slide-top">
+							<a href="#" class="ver">Ver todas las especialidades</a>
 						</div>
 					</div>
 				</div>
