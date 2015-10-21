@@ -24,8 +24,6 @@
 <script type="text/javascript">
 	$(document).ready(function(){
 		$('#section-nuestra-clinica').parallax("50%", 0.1);
-		$('#section-acerca-de').parallax("50%", 0.3);
-		$('#section-especialidades-detalle').parallax("50%", 0.3);
 	})
 </script>
 <!--[if lt IE 9]>
@@ -56,9 +54,9 @@
 						            <nav id="nav-main" class="navbar-collapse collapse col-lg-10 col-md-10 col-sm-12 col-xs-12 clearfix">
 						                <ul class="clearfix">
 						                  	<li><a href="nuestra-clinica.html">Nuestra Clínica</a></li>
-						                    <li><a href="profesionales.html">Profesionales</a></li>
-						                    <li><a href="especialidades.html">Especialidades</a></li>
-						                   	<li><a href="fundacion-orema.html">Fundación Orema</a></li>
+						                    <li><a href="nuestros-profesionales.html">Profesionales</a></li>
+						                    <li><a href="nuestras-especialidades.html">Especialidades</a></li>
+						                   	<li><a href="fundacion.html">Fundación Orema</a></li>
 						                   	<li><a href="noticias.html">Noticias</a></li>
 						                   	<li><a href="#">Tus Exámenes</a></li>
 						                </ul>
@@ -97,24 +95,32 @@
 						<h2>Acerca de nosotros</h2>
 						<p>Dirigidos por el Dr. Claudio Brenner y la Dra. Verónica Sanhueza, Clínica Orema nace como producto del anhelo de ambos profesionales por volcar su vocación en aquellos pacientes complejos, que no tenían cabida en la odontología tradicional. Es decir, mezclar de manera óptima lo estético y reconstructivo.</p>
 						<div class="cont-item row">
-							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 slide-bottom">
-								<img src="imag/prof/claudio-brenner.jpg" alt="Dr. Claudio Brenner" /> 
-								<h4><a href="#">Dr. Claudio Brenner</a></h4>
-								<h5>Director General</h5>
+							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+								<div class="item-prof">
+									<img src="imag/prof/claudio-brenner.jpg" alt="Dr. Claudio Brenner" class="img-responsive slide-bottom" /> 
+									<h4 class="slide-bottom"><a href="#">Dr. Claudio Brenner</a></h4>
+									<h5 class="slide-bottom">Director General</h5>
+								</div>
 							</div>
-							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 slide-bottom">
-								<img src="imag/prof/claudio-brenner.jpg" alt="Dr. Claudio Brenner" /> 
-								<h4><a href="#">Dra. Verónica Sanhueza</a></h4>
-								<h5>Sub Directora</h5>
+							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+								<div class="item-prof">
+									<img src="imag/prof/veronica-sanhueza.jpg" alt="Dra. Verónica Sanhueza" class="img-responsive slide-bottom" /> 
+									<h4 class="slide-bottom"><a href="#">Dra. Verónica Sanhueza</a></h4>
+									<h5 class="slide-bottom">Sub Directora</h5>
+								</div>
 							</div>
-							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 slide-bottom">
-								<img src="imag/prof/claudio-brenner.jpg" alt="Dr. Claudio Brenner" /> 
-								<h4><a href="#">Dra. Gabriela Rodríguez</a></h4>
-								<h5>Director Médico</h5>
+							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+								<div class="item-prof">
+									<img src="imag/prof/gabriela-rodriguez.jpg" alt="Dra.Gabriela Rodríguez" class="img-responsive slide-bottom" /> 
+									<h4 class="slide-bottom"><a href="#">Dra. Gabriela Rodríguez</a></h4>
+									<h5 class="slide-bottom">Director Médico</h5>
+								</div>
 							</div>
 						</div>
-						<div class="cont-button">
-							<a href="#" class="ver">Ver todos los profesionales</a>
+						<div class="center">
+							<div class="cont-button-transparent">
+								<a href="#" class="ver">Ver todos los profesionales</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -126,8 +132,8 @@
 						<p>En Clínica Orema contamos con infraestructura y equipamiento de vanguardia, además de protocolos y servicios orientados al paciente que funcionan bajo los más estrictos estándares de calidad y seguridad.</p>
 						<div class="row clearfix">
 							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-								<div class="item slide-bottom">
-									<img src="imag/demo/ejemplo_esp.jpg" alt="Pabellones Quirúrgicos" class="img-responsive" />
+								<div class="item slide-bottom clearfix">
+									<img src="imag/demo/serv01.jpg" alt="Pabellones Quirúrgicos" class="img-responsive" />
 									<h4>Pabellones Quirúrgicos</h4>
 									<div class="cont-text">
 										<p>Contamos con tres pabellones de cirugía mayor y para cirugías ambulatorias; el personal a cargo del área está capacitado para atender y realizar procedimientos bajo anestesia general.</p>
@@ -135,8 +141,8 @@
 								</div>
 							</div>
 							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-								<div class="item slide-bottom">
-									<img src="imag/demo/ejemplo_esp.jpg" alt="Pabellones Quirúrgicos" class="img-responsive" />
+								<div class="item slide-bottom clearfix">
+									<img src="imag/demo/serv02.jpg" alt="Cerec" class="img-responsive" />
 									<h4>Cerec</h4>
 									<div class="cont-text">
 										<p>El diseño de sonrisa digital permite proyectar y mostrarle al paciente como quedarán sus dientes después del tratamiento. Con sólo un par de fotografías es posible modelar las piezas.</p>
@@ -144,8 +150,8 @@
 								</div>
 							</div>
 							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-								<div class="item slide-bottom">
-									<img src="imag/demo/ejemplo_esp.jpg" alt="Pabellones Quirúrgicos" class="img-responsive" />
+								<div class="item slide-bottom clearfix">
+									<img src="imag/demo/serv03.jpg" alt="Pabellones Quirúrgicos" class="img-responsive" />
 									<h4>Sala de Recuperación</h4>
 									<div class="cont-text">
 										<p>Algunas intervenciones que se realizan requieren de mayor reposo. Para esto, contamos con cómodas instalaciones para que los pacientes tengan una adecuada recuperación.</p>
@@ -153,8 +159,8 @@
 								</div>
 							</div>
 							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-								<div class="item slide-bottom">
-									<img src="imag/demo/ejemplo_esp.jpg" alt="Pabellones Quirúrgicos" class="img-responsive" />
+								<div class="item slide-bottom clearfix">
+									<img src="imag/demo/serv04.jpg" alt="Pabellones Quirúrgicos" class="img-responsive" />
 									<h4>Consultas Médicas</h4>
 									<div class="cont-text">
 										<p>Los profesionales de Clínica Orema cuentan con consultas odontológicas y médicas, modernamente equipadas, para así poder entregar a los pacientes una atención personalizada y de primer nivel.</p>
@@ -162,8 +168,8 @@
 								</div>
 							</div>
 							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-								<div class="item slide-bottom">
-									<img src="imag/demo/ejemplo_esp.jpg" alt="Pabellones Quirúrgicos" class="img-responsive" />
+								<div class="item slide-bottom clearfix">
+									<img src="imag/demo/serv05.jpg" alt="Pabellones Quirúrgicos" class="img-responsive" />
 									<h4>Laboratorio Clínico y Toma de Muestras</h4>
 									<div class="cont-text">
 										<p>Ofrece al paciente realizar todos los exámenes necesarios para el diagnóstico y posterior tratamiento que necesite, con una avanzada tecnología y un equipo profesional altamente capacitado.</p>
@@ -171,8 +177,8 @@
 								</div>
 							</div>
 							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-								<div class="item slide-bottom">
-									<img src="imag/demo/ejemplo_esp.jpg" alt="Pabellones Quirúrgicos" class="img-responsive" />
+								<div class="item slide-bottom clearfix">
+									<img src="imag/demo/serv06.jpg" alt="Pabellones Quirúrgicos" class="img-responsive" />
 									<h4>Laboratorio Dental</h4>
 									<div class="cont-text">
 										<p>Servicio complementario que apoya la labor odontológica en beneficio de la rehabilitación oral. Permite, en la gran mayoría de los casos, acortar los tiempos en el proceso del tratamiento.</p>
@@ -180,8 +186,8 @@
 								</div>
 							</div>
 							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-								<div class="item slide-bottom">
-									<img src="imag/demo/ejemplo_esp.jpg" alt="Pabellones Quirúrgicos" class="img-responsive" />
+								<div class="item slide-bottom clearfix">
+									<img src="imag/demo/serv07.jpg" alt="Pabellones Quirúrgicos" class="img-responsive" />
 									<h4>Unidad de Imagenología</h4>
 									<div class="cont-text">
 										<p>Modernos equipos de radiología digital qe minimizan la doss de radiación recibida por el paciente. Destacan el scanner 3D Galileos con FACESCAN y equipos de radiografías panorámicas.</p>
@@ -189,8 +195,8 @@
 								</div>
 							</div>
 							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-								<div class="item slide-bottom">
-									<img src="imag/demo/ejemplo_esp.jpg" alt="Pabellones Quirúrgicos" class="img-responsive" />
+								<div class="item slide-bottom clearfix">
+									<img src="imag/demo/serv08.jpg" alt="Pabellones Quirúrgicos" class="img-responsive" />
 									<h4>Central de Esterilización</h4>
 									<div class="cont-text">
 										<p>MComprometidos con las normas técnicas sobre esterilización y desinfección de elementos clínicos, en Clínica Orema tenemos un completo equipamiento que permite certificar cada una de las etapas.</p>
@@ -198,8 +204,8 @@
 								</div>
 							</div>
 							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-								<div class="item slide-bottom">
-									<img src="imag/demo/ejemplo_esp.jpg" alt="Pabellones Quirúrgicos" class="img-responsive" />
+								<div class="item slide-bottom clearfix">
+									<img src="imag/demo/serv09.jpg" alt="Pabellones Quirúrgicos" class="img-responsive" />
 									<h4>Cafetería</h4>
 									<div class="cont-text">
 										<p>En el primer piso de la Clínica, nuestros pacientes y sus acompañantes podrán disfrutar de un excelente servicio de cafetería.</p>
@@ -207,8 +213,8 @@
 								</div>
 							</div>
 							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-								<div class="item slide-bottom">
-									<img src="imag/demo/ejemplo_esp.jpg" alt="Pabellones Quirúrgicos" class="img-responsive" />
+								<div class="item slide-bottom clearfix">
+									<img src="imag/demo/serv10.jpg" alt="Pabellones Quirúrgicos" class="img-responsive" />
 									<h4>Estacionamiento</h4>
 									<div class="cont-text">
 										<p>Clínica OREMA cuenta con estacionamientos propios para los pacientes.</p>
