@@ -86,7 +86,7 @@ header {
 		.row {padding:50px 0 0;}
 		.item {position:relative; margin:0 0 20px; padding:0px; height:255px; .rounded-corners (@radius:2px); border:3px solid @light-grey; overflow:hidden;} 
 		.item {
-			h4 {position:absolute; width:100%; bottom:0; left:0; margin:0px; padding:25px 0; font-size:15px; text-transform:uppercase; font-weight:700; text-align:center;}
+			h4 {position:absolute; width:100%; bottom:0; left:0; margin:0px; padding:25px 0; font-size:20px; text-transform:uppercase; font-weight:700; text-align:center;}
 			h4 a {color:@white;}
 			h4 a:hover {text-decoration:underline;}
 			h4:hover {background:@base-blue;}
@@ -115,14 +115,16 @@ header {
 	.rec-reserva {margin:35px auto 55px; padding:45px 35px 20px; .rounded-corners (@radius:10px); background:@white; border:@border-grey; float:right; color:@base-blue; -webkit-box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.7); -moz-box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.7); box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.7);}
 	.rec-reserva {
 		.separa-form {margin:0 0 25px; text-align:left;}
-		label {display:block; text-align:left; line-height:40px;}
+		label {display:block; text-align:left;}
 		select {width:100%; padding:10px 30px; border:2px solid @base-blue; .rounded-corners (@radius:5px); background: url(../imag/back/bg-select.png) repeat left bottom @white;}
+		.radio {margin:0; padding-top:13px;}
+		.radio input {margin-top:13px; cursor:auto;}
 		button {padding:10px 30px; background:@base-blue; color:@white; font-weight:600; text-transform:uppercase; border:none; .rounded-corners (@radius:5px); float:right;}
 		button:hover {background:@light-blue; text-decoration:none;}
 	}
 }
 
-/**/
+/*Home Fundación*/
 #section-fundacion {min-height:800px; background:url(../imag/back/bg-fundacion.jpg) 50% 0 no-repeat fixed; text-align:cenetr;}
 #section-fundacion {
 	.cont-fundacion {padding:140px 0 70px; text-align:center;}
@@ -140,12 +142,22 @@ header {
 	}
 }
 
-/**/
+/*Home Noticias*/
 #section-noticias {min-height:800px; background:@back-light-blue;}
 #section-noticias {
 	h2 {text-align:center;}
 	.cont-noticias {padding:100px 0;}
 	.item-noticias {margin:0 0 25px; background:@white; height:140px; .rounded-corners (@radius:5px);}
+	.item-noticias {
+		h4 {padding:30px 0 5px;}
+		h4 a {color:@base-blue; font-weight:600;}
+		h4 a:hover {color:@alt-blue;}
+		.excerpt {padding:0 30px 0 0; color:@base-blue; font-size:16px;}
+		img {float:left; margin:0 30px 0 0; .rounded-corners (@radius:5px 0px 0 5px);}
+	}
+	.ver-mas {text-align:right;}
+	.ver-mas a {font-size:16px; color:@base-blue; font-weight:600;}
+	.ver-mas a:hover {color:@alt-blue;}
 }
 
 /*CONTENT - INTERIOR*/
@@ -162,6 +174,9 @@ header {
 	p {margin:0 0 40px; color:@base-blue;}
 }
 #section-especialidades-detalle {padding:100px 0 120px; background:@back-light-blue;}
+#section-especialidades-detalle {
+	.item {}
+}
 .show-video {margin:35px auto 0; text-align:center;}
 .show-video {
 	a {color:@white; font-weight:600; text-transform:uppercase; letter-spacing:1px;}
@@ -171,13 +186,17 @@ header {
 }
 
 /*FOOTER*/
-footer {padding:40px 0 0; color:@white; background:@base-blue;}
+footer {padding:45px 0 0; color:@white; background:@base-blue; border-top:1px solid @border-grey;}
 footer {
 	h3 {margin:0 0 15px; font-size:18px; font-weight:600;}
 	.cont-footer {
-		p {font-size:14px;}
+		p {font-size:13px;}
+		#contacto {margin:35px 45px 0 0;}
+		.separa-form input[type="text"] {width:100%; margin:0 0px 30px 0; padding:8px 15px; color:@grey; border:none; .rounded-corners (@radius:4px); background: url(../imag/back/bg-select.png) repeat left bottom @white; font-style:italic; font-size:13px;}
+		.separa-form input[type="submit"] {margin:0; padding:8px 20px; background-color:@pink; color:@white; font-weight:600; text-transform:uppercase; letter-spacing:1px; .rounded-corners (@radius:4px); border:none; float:right;}
+		.separa-form input[type="submit"]:hover {background:@alt-blue;}
 	}
-	.last-foot {margin:50px 0 0; padding:20px 0; background:@dark-blue;}
+	.last-foot {margin:50px 0 0; padding:20px 0; background:@back-light-blue;}
 	.last-foot {
 		p {margin:0; font-size:14px; color:@white; font-weight:600;}
 		ul {margin:0; padding:0;}

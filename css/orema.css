@@ -204,7 +204,7 @@ header #nav-main ul li a:hover {
   left: 0;
   margin: 0px;
   padding: 25px 0;
-  font-size: 15px;
+  font-size: 20px;
   text-transform: uppercase;
   font-weight: 700;
   text-align: center;
@@ -319,7 +319,6 @@ header #nav-main ul li a:hover {
 #section-reserva .rec-reserva label {
   display: block;
   text-align: left;
-  line-height: 40px;
 }
 #section-reserva .rec-reserva select {
   width: 100%;
@@ -331,6 +330,14 @@ header #nav-main ul li a:hover {
   -o-border-radius: 5px;
   border-radius: 5px;
   background: url(../imag/back/bg-select.png) repeat left bottom #ffffff;
+}
+#section-reserva .rec-reserva .radio {
+  margin: 0;
+  padding-top: 13px;
+}
+#section-reserva .rec-reserva .radio input {
+  margin-top: 13px;
+  cursor: auto;
 }
 #section-reserva .rec-reserva button {
   padding: 10px 30px;
@@ -350,7 +357,7 @@ header #nav-main ul li a:hover {
   background: #3697b7;
   text-decoration: none;
 }
-/**/
+/*Home Fundación*/
 #section-fundacion {
   min-height: 800px;
   background: url(../imag/back/bg-fundacion.jpg) 50% 0 no-repeat fixed;
@@ -410,7 +417,7 @@ header #nav-main ul li a:hover {
 #section-fundacion .show-video img {
   margin: 0 auto;
 }
-/**/
+/*Home Noticias*/
 #section-noticias {
   min-height: 800px;
   background: #dbe3e5;
@@ -430,6 +437,41 @@ header #nav-main ul li a:hover {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
+}
+#section-noticias .item-noticias h4 {
+  padding: 30px 0 5px;
+}
+#section-noticias .item-noticias h4 a {
+  color: #1c3b55;
+  font-weight: 600;
+}
+#section-noticias .item-noticias h4 a:hover {
+  color: #227899;
+}
+#section-noticias .item-noticias .excerpt {
+  padding: 0 30px 0 0;
+  color: #1c3b55;
+  font-size: 16px;
+}
+#section-noticias .item-noticias img {
+  float: left;
+  margin: 0 30px 0 0;
+  -webkit-border-radius: 5px 0px 0 5px;
+  -moz-border-radius: 5px 0px 0 5px;
+  -ms-border-radius: 5px 0px 0 5px;
+  -o-border-radius: 5px 0px 0 5px;
+  border-radius: 5px 0px 0 5px;
+}
+#section-noticias .ver-mas {
+  text-align: right;
+}
+#section-noticias .ver-mas a {
+  font-size: 16px;
+  color: #1c3b55;
+  font-weight: 600;
+}
+#section-noticias .ver-mas a:hover {
+  color: #227899;
 }
 /*CONTENT - INTERIOR*/
 /*Nuestra Clínica*/
@@ -496,6 +538,7 @@ footer {
   padding: 40px 0 0;
   color: #ffffff;
   background: #1c3b55;
+  border-top: 1px solid #979797;
 }
 footer h3 {
   margin: 0 0 15px;
@@ -503,12 +546,49 @@ footer h3 {
   font-weight: 600;
 }
 footer .cont-footer p {
-  font-size: 14px;
+  font-size: 13px;
+}
+footer .cont-footer #contacto {
+  margin: 35px 45px 0 0;
+}
+footer .cont-footer .separa-form input[type="text"] {
+  width: 100%;
+  margin: 0 0px 30px 0;
+  padding: 8px 15px;
+  color: #333333;
+  border: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  background: url(../imag/back/bg-select.png) repeat left bottom #ffffff;
+  font-style: italic;
+  font-size: 13px;
+}
+footer .cont-footer .separa-form input[type="submit"] {
+  margin: 0;
+  padding: 8px 20px;
+  background-color: #e17664;
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  border: none;
+  float: right;
+}
+footer .cont-footer .separa-form input[type="submit"]:hover {
+  background: #227899;
 }
 footer .last-foot {
   margin: 50px 0 0;
   padding: 20px 0;
-  background: #0a1a27;
+  background: #dbe3e5;
 }
 footer .last-foot p {
   margin: 0;
