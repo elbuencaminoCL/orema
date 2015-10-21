@@ -8,7 +8,7 @@ p {
 }
 h2 {
   margin: 0 0 50px;
-  font-size: 24px;
+  font-size: 33px;
   color: #1c3b55;
   font-weight: 600;
   letter-spacing: -1px;
@@ -24,6 +24,9 @@ a:hover {
 header {
   background: url(../imag/back/bg-header.png) repeat-x left top transparent !important;
   border: none !important;
+}
+header h1 {
+  margin-top: 15px;
 }
 header .container {
   position: relative;
@@ -56,7 +59,7 @@ header .cont-reservar a:hover {
   text-decoration: none;
 }
 header #nav-main {
-  margin: 80px 0 0;
+  margin: 75px 0 0;
 }
 header #nav-main ul {
   margin: 0;
@@ -109,7 +112,7 @@ header #nav-main ul li a:hover {
 #section-clinica .show-video a.icon {
   display: block;
   margin: 0 auto 25px;
-  width: 114px;
+  width: 144px;
   height: 144px;
 }
 #section-clinica .show-video a:hover {
@@ -209,6 +212,9 @@ header #nav-main ul li a:hover {
 #section-especialidades .cont-especialidades .item h4 a {
   color: #ffffff;
 }
+#section-especialidades .cont-especialidades .item h4 a:hover {
+  text-decoration: underline;
+}
 #section-especialidades .cont-especialidades .item h4:hover {
   background: #1c3b55;
 }
@@ -271,18 +277,24 @@ header #nav-main ul li a:hover {
 /*Home Reservas*/
 #section-reserva {
   min-height: 820px;
-  text-align: center;
+  text-align: right;
   background: url(../imag/back/bg-reserva.jpg) 50% 0 no-repeat fixed;
 }
 #section-reserva h2 {
   color: #ffffff;
+  margin-bottom: 25px;
+}
+#section-reserva p {
+  margin-left: 30px;
 }
 #section-reserva p,
 #section-reserva a {
+  font-size: 16px;
+  font-weight: 600;
   color: #ffffff;
 }
 #section-reserva .cont-horas {
-  padding: 220px 0 0;
+  padding: 100px 0 0;
 }
 #section-reserva .rec-reserva {
   margin: 35px auto 55px;
@@ -292,9 +304,9 @@ header #nav-main ul li a:hover {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   border-radius: 10px;
-  background: url(../imag/back/bg-rec.png) repeat left top;
+  background: #ffffff;
   border: #979797;
-  float: none;
+  float: right;
   color: #1c3b55;
   -webkit-box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.7);
   -moz-box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.7);
@@ -338,39 +350,29 @@ header #nav-main ul li a:hover {
   background: #3697b7;
   text-decoration: none;
 }
-#section05 {
+/**/
+#section-fundacion {
   min-height: 800px;
-  background: #dbe3e5;
-  -webkit-box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.7);
-  -moz-box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.7);
-  box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.7);
+  background: url(../imag/back/bg-fundacion.jpg) 50% 0 no-repeat fixed;
+  text-align: cenetr;
 }
-#section05 .cont-noticias {
-  padding: 200px 0 70px;
+#section-fundacion .cont-fundacion {
+  padding: 140px 0 70px;
+  text-align: center;
 }
-#section05 .item-noticias {
-  margin: 0 0 25px;
-  background: #ffffff;
-  height: 140px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
+#section-fundacion h2 {
+  color: #ffffff;
+  margin: 0 0 30px;
 }
-#section06 {
-  min-height: 800px;
+#section-fundacion p {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
 }
-#section06 .cont-fundacion {
-  padding: 200px 0 70px;
-}
-#section06 h2 {
-  color: #e17664;
-}
-#section06 .cont-button {
+#section-fundacion .cont-button {
   margin: 30px 0 0;
 }
-#section06 a.conoce {
+#section-fundacion a.conoce {
   padding: 10px 30px;
   background: #e17664;
   color: #ffffff;
@@ -382,9 +384,112 @@ header #nav-main ul li a:hover {
   border-radius: 5px;
   text-transform: uppercase;
 }
-#section06 a.conoce:hover {
+#section-fundacion a.conoce:hover {
   background: #3697b7;
   text-decoration: none;
+}
+#section-fundacion .show-video {
+  margin: 80px auto 0;
+  text-align: center;
+}
+#section-fundacion .show-video a {
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+#section-fundacion .show-video a.icon {
+  display: block;
+  margin: 0 auto 25px;
+  width: 144px;
+  height: 144px;
+}
+#section-fundacion .show-video a:hover {
+  color: #1c3b55;
+}
+#section-fundacion .show-video img {
+  margin: 0 auto;
+}
+/**/
+#section-noticias {
+  min-height: 800px;
+  background: #dbe3e5;
+}
+#section-noticias h2 {
+  text-align: center;
+}
+#section-noticias .cont-noticias {
+  padding: 100px 0;
+}
+#section-noticias .item-noticias {
+  margin: 0 0 25px;
+  background: #ffffff;
+  height: 140px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+/*CONTENT - INTERIOR*/
+/*Nuestra Clínica*/
+#section-nuestra-clinica {
+  min-height: 780px;
+  background: url(../imag/back/bg-nuestra.jpg) 50% 0 no-repeat fixed;
+}
+#section-nuestra-clinica .container {
+  padding: 150px 0 0;
+}
+#section-nuestra-clinica h2 {
+  margin: 0 0 65px;
+  font-size: 28px;
+  color: #ffffff;
+}
+#section-nuestra-clinica p {
+  margin: 0 0 30px;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 400;
+  line-height: 130%;
+}
+#section-acerca-de {
+  padding: 80px 0;
+}
+#section-acerca-de h2,
+#section-especialidades-detalle h2 {
+  font-size: 26px;
+}
+#section-acerca-de p,
+#section-especialidades-detalle p {
+  margin: 0 0 40px;
+  color: #1c3b55;
+}
+#section-especialidades-detalle {
+  padding: 100px 0 120px;
+  background: #dbe3e5;
+}
+.show-video {
+  margin: 35px auto 0;
+  text-align: center;
+}
+.show-video a {
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.show-video a.icon {
+  display: block;
+  margin: 0 auto;
+  width: 144px;
+  height: 144px;
+}
+.show-video a:hover {
+  color: #227899;
+}
+.show-video img {
+  margin: 0 auto;
+  float: none;
 }
 /*FOOTER*/
 footer {

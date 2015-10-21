@@ -26,7 +26,7 @@
 body {font-family:@family;}
 p {font-size:15px;}
 h1 {}
-h2 {margin:0 0 50px; font-size:24px; color:@base-blue; font-weight:600; letter-spacing:-1px;}
+h2 {margin:0 0 50px; font-size:33px; color:@base-blue; font-weight:600; letter-spacing:-1px;}
 a:hover {text-decoration:none;}
 
 /*ESTRUCTURE*/
@@ -36,11 +36,12 @@ a:hover {text-decoration:none;}
 /*HEADER*/
 header {background:url(../imag/back/bg-header.png) repeat-x left top transparent !important; border:none !important;}
 header {
+	h1 {margin-top:15px;}
 	.container {position:relative;}
 	.cont-reservar {position:absolute; top:15px; right:0; padding:0; font-size:14px; font-weight:600; text-align:center;}
 	.cont-reservar a {display:block; padding:10px 25px; color:@alt-blue; letter-spacing:1px; .rounded-corners (@radius:4px); color:@alt-blue; border:2px solid @alt-blue; text-transform:uppercase;}
 	.cont-reservar a:hover {background:@alt-blue; color:@white; text-decoration:none;}
-	#nav-main {margin:80px 0 0;}
+	#nav-main {margin:75px 0 0;}
 	#nav-main {
 		ul {margin:0; padding:0;}
 		ul li {display:inline-block; list-style-type:none;}
@@ -58,7 +59,7 @@ header {
 	.show-video {margin:300px auto 0; text-align:center;}
 	.show-video {
 		a {color:@alt-blue; font-weight:600; text-transform:uppercase; letter-spacing:1px;}
-		a.icon {display:block; margin:0 auto 25px; width:114px; height:144px;}
+		a.icon {display:block; margin:0 auto 25px; width:144px; height:144px;}
 		a:hover {color:@base-blue;}
 		img {margin:0 auto;}
 	}
@@ -87,6 +88,7 @@ header {
 		.item {
 			h4 {position:absolute; width:100%; bottom:0; left:0; margin:0px; padding:25px 0; font-size:15px; text-transform:uppercase; font-weight:700; text-align:center;}
 			h4 a {color:@white;}
+			h4 a:hover {text-decoration:underline;}
 			h4:hover {background:@base-blue;}
 			img {margin:0 0 20px; width:100%; height:auto; border-bottom:1px solid @border-grey; .rounded-corners (@radius:2px);}
 			.cont-text {display:block; height:120px; padding:0 20px; text-align:left;}
@@ -104,12 +106,13 @@ header {
 }
 
 /*Home Reservas*/
-#section-reserva {min-height:820px; text-align:center; background: url(../imag/back/bg-reserva.jpg) 50% 0 no-repeat fixed;}
+#section-reserva {min-height:820px; text-align:right; background: url(../imag/back/bg-reserva.jpg) 50% 0 no-repeat fixed;}
 #section-reserva {
-	h2 {color:@white;}
-	p, a {color:@white;}
-	.cont-horas {padding:220px 0 0;}
-	.rec-reserva {margin:35px auto 55px; padding:45px 35px 20px; .rounded-corners (@radius:10px); background: url(../imag/back/bg-rec.png) repeat left top; border:@border-grey; float:none; color:@base-blue; -webkit-box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.7); -moz-box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.7); box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.7);}
+	h2 {color:@white; margin-bottom:25px;}
+	p {margin-left:30px;}
+	p, a {font-size:16px; font-weight:600; color:@white;}
+	.cont-horas {padding:100px 0 0;}
+	.rec-reserva {margin:35px auto 55px; padding:45px 35px 20px; .rounded-corners (@radius:10px); background:@white; border:@border-grey; float:right; color:@base-blue; -webkit-box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.7); -moz-box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.7); box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.7);}
 	.rec-reserva {
 		.separa-form {margin:0 0 25px; text-align:left;}
 		label {display:block; text-align:left; line-height:40px;}
@@ -118,18 +121,53 @@ header {
 		button:hover {background:@light-blue; text-decoration:none;}
 	}
 }
-#section05 {min-height:800px; background:@back-light-blue; -webkit-box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.7); -moz-box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.7); box-shadow: 0px 1px 3px 0px rgba(50, 50, 50, 0.7);}
-#section05 {
-	.cont-noticias {padding:200px 0 70px;}
-	.item-noticias {margin:0 0 25px; background:@white; height:140px; .rounded-corners (@radius:5px);}
-}
-#section06 {min-height:800px;}
-#section06 {
-	.cont-fundacion {padding:200px 0 70px;}
-	h2 {color:@pink;}
+
+/**/
+#section-fundacion {min-height:800px; background:url(../imag/back/bg-fundacion.jpg) 50% 0 no-repeat fixed; text-align:cenetr;}
+#section-fundacion {
+	.cont-fundacion {padding:140px 0 70px; text-align:center;}
+	h2 {color:@white; margin:0 0 30px;}
+	p {color:@white; font-size:16px; font-weight:400;}
 	.cont-button {margin:30px 0 0;}
 	a.conoce {padding:10px 30px; background:@pink; color:@white; font-weight:600; .rounded-corners (@radius:5px); text-transform:uppercase;}
 	a.conoce:hover {background:@light-blue; text-decoration:none;}
+	.show-video {margin:80px auto 0; text-align:center;}
+	.show-video {
+		a {color:@white; font-weight:600; text-transform:uppercase; letter-spacing:1px;}
+		a.icon {display:block; margin:0 auto 25px; width:144px; height:144px;}
+		a:hover {color:@base-blue;}
+		img {margin:0 auto;}
+	}
+}
+
+/**/
+#section-noticias {min-height:800px; background:@back-light-blue;}
+#section-noticias {
+	h2 {text-align:center;}
+	.cont-noticias {padding:100px 0;}
+	.item-noticias {margin:0 0 25px; background:@white; height:140px; .rounded-corners (@radius:5px);}
+}
+
+/*CONTENT - INTERIOR*/
+/*Nuestra Clínica*/
+#section-nuestra-clinica {min-height:780px; background:url(../imag/back/bg-nuestra.jpg) 50% 0 no-repeat fixed;}
+#section-nuestra-clinica {
+	.container {padding:150px 0 0;}
+	h2 {margin:0 0 65px; font-size:28px; color:@white;}
+	p {margin:0 0 30px; font-size:16px; color:@white; font-weight:400; line-height:130%;}
+}
+#section-acerca-de {padding:80px 0;}
+#section-acerca-de, #section-especialidades-detalle {
+	h2 {font-size:26px;}
+	p {margin:0 0 40px; color:@base-blue;}
+}
+#section-especialidades-detalle {padding:100px 0 120px; background:@back-light-blue;}
+.show-video {margin:35px auto 0; text-align:center;}
+.show-video {
+	a {color:@white; font-weight:600; text-transform:uppercase; letter-spacing:1px;}
+	a.icon {display:block; margin:0 auto; width:144px; height:144px;}
+	a:hover {color:@alt-blue;}
+	img {margin:0 auto; float:none;}
 }
 
 /*FOOTER*/
