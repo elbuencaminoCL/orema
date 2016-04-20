@@ -1,0 +1,97 @@
+*{margin: 0;padding: 0;font-family: 'Open Sans', sans-serif;}
+
+body{
+	background-color: #a2a2a2;
+}
+.rec-reserva {
+  padding-bottom: 35px;
+    margin: 35px auto 55px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+    background: #ffffff;
+    border: #979797;
+    float: right;
+    color: #1c3b55;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.7);
+    -moz-box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.7);
+    box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.7);
+}
+.modulo-reserva .header-modulo-reserva{
+  background-color: #308ACD;
+  width: 100%;
+  text-align: center;
+}
+.modulo-reserva .header-modulo-reserva img{
+  margin-left: -5%;
+}
+.rec-reserva .modulo-reserva h4{
+  padding: 30px 0px 15px 0px;
+  color: #555555;
+  font-size: 16px;
+  font-weight: 400;
+}
+.rec-reserva .modulo-reserva .pasos-reserva {
+  width: 300px;
+  height: auto;
+  margin: 0px auto 50px auto;
+  text-align: left;
+  padding-left: 10px;
+
+}
+.rec-reserva .modulo-reserva .pasos-reserva p{
+  padding: 3px;
+  color: #555;
+}
+.rec-reserva .modulo-reserva .pasos-reserva img{
+  margin-right: 5px;
+}
+.rec-reserva .modulo-reserva button{
+  padding: 8px 40px;
+  background-color: #1B3A56;
+  font-size: 20px;
+}
+@media (max-width: 1200px) { 
+  
+  .modulo-reserva .header-modulo-reserva img{
+    margin-left: -25%;
+  }
+}
+@media (max-width: 767px) { 
+  
+  .rec-reserva {
+    margin-right: 15px;
+  }
+  .modulo-reserva .header-modulo-reserva img{
+    margin-left: -25%;
+  }
+}
+@media (max-width: 600px) {
+  .modulo-reserva .header-modulo-reserva img{
+    width: 660px;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) { 
+  
+  .modulo-reserva .header-modulo-reserva img{
+    margin-left: -30%;
+    width: 560px;
+  }
+  .rec-reserva .modulo-reserva button{
+  padding: 8px 30px;
+  background-color: #1B3A56;
+  font-size: 20px;
+}
+}
+  @media (max-width: 380px) { 
+  
+  .modulo-reserva .header-modulo-reserva img{
+    margin-left: -30%;
+    width: 460px;
+  }
+}
